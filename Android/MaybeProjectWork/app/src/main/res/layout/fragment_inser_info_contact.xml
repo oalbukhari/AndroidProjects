@@ -1,0 +1,176 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fedom.maybeprojectwork.FragmentActivities.InserInfoContact"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbareditinsert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    <!-- TODO: Update blank fragment layout -->
+
+        <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:id="@+id/imageView2"
+                android:layout_height="125dp"
+                android:scaleType="fitCenter"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp" />
+
+            <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_name"
+            android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <EditText
+                android:layout_width="match_parent"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/insertName"
+                android:hint="Name"
+                android:layout_height="150px"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_surname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="150px"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/insertSurname"
+                android:hint="Surname"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="150px"
+                android:ems="10"
+                android:id="@+id/insertDate"
+                android:hint="Date"
+                android:inputType="date"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="150px"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/insertEmail"
+                android:hint="E-Mail"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_telephone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="150px"
+                android:inputType="phone"
+                android:ems="10"
+                android:id="@+id/insertPhone"
+                android:hint="Phone"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_address"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="150px"
+                android:inputType="text"
+                android:ems="10"
+                android:id="@+id/insertAddress"
+                android:hint="Address"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_City"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="150px"
+                android:inputType="text"
+                android:ems="10"
+                android:id="@+id/InsertCity"
+                android:hint="City"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_CAP"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="150px"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/insertCAP"
+                android:hint="C.A.P."
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_province"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="150px"
+                android:inputType="text"
+                android:ems="10"
+                android:id="@+id/insertProvince"
+                android:hint="Province/State"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp" />
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,26 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fedom.weatherproject.Fragments_NOT_FINISHED.FragmentInfoCity">
+
+    <Button
+        android:text=" ADD CITY AND INFO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addCityAndInfo"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/list_view_city"
+        android:layout_above="@+id/addCityAndInfo" />
+
+</FrameLayout>

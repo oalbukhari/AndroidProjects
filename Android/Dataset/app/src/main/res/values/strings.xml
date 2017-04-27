@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Dataset</string>
+    <string name="add_contact">Add random contact</string>
+    <string name="delete_confirmation">Do you really want to delete %1$s?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="name">Name</string>
+    <string name="input_new_name">Input new name here...</string>
+    <string name="surname">Surname</string>
+    <string name="input_new_surname">Input new surname here...</string>
+    <string name="ok">Ok</string>
+</resources>

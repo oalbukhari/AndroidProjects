@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/toolbaredit"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#ffffff"
+            android:text="ADD CONTACT"
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
+
+
+        <android.support.v7.widget.ActionBarContainer
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:elevation="4dp"
+            android:clickable="false"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="right"
+            android:id="@+id/saveInfo">
+
+            <ImageView
+                android:layout_height="match_parent"
+                app:srcCompat="@android:drawable/ic_menu_save"
+                android:id="@+id/imageView"
+                android:scaleType="centerInside"
+
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="0dp" />
+
+        </android.support.v7.widget.ActionBarContainer>
+
+    </android.support.v7.widget.Toolbar>
+
+</LinearLayout>

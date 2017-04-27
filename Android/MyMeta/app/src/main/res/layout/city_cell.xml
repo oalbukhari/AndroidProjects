@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:text="Nome"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textImpl"
+        android:textSize="18sp"
+        android:textAlignment="center" />
+
+    <TextView
+        android:text="insertCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtCity"
+        android:textSize="18sp"
+        android:textAlignment="center" />
+</LinearLayout>
