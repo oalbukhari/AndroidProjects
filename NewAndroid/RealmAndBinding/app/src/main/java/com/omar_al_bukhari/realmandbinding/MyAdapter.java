@@ -9,6 +9,8 @@ import android.widget.ListView;
 
 import java.util.List;
 
+import io.realm.RealmResults;
+
 /**
  * Developer: Omar Al Bukhari
  * Username: fedom
@@ -17,12 +19,14 @@ import java.util.List;
  */
 
 public class MyAdapter extends RecyclerView.Adapter<MyViewHolder> {
-    private List<ListItem> list;
+    private RealmResults<ListItem> list;
     private Context context;
+    private ListItem listItem;
 
-    public MyAdapter(List<ListItem> list, Context context) {
+    public MyAdapter(RealmResults<ListItem> list, Context context) {
         this.list = list;
         this.context = context;
+        setHasStableIds(true);
     }
 
     @Override
@@ -33,15 +37,33 @@ public class MyAdapter extends RecyclerView.Adapter<MyViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder(MyViewHolder holder, int position) {
-        ListItem listItem= list.get(position);
+    public void onBindViewHolder(final MyViewHolder holder, int position) {
+        final ListItem listItem= list.get(position);
         holder.txtAge.setText(listItem.getAge());
         holder.txtName.setText(listItem.getName());
 
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
     }
+
+
 
     @Override
     public int getItemCount() {
         return list.size();
+    }
+
+    @Override
+    public long getItemId(int position) {
+        return super.getItemId(position);
+    }
+
+    @Override
+    public void onAttachedToRecyclerView(RecyclerView recyclerView) {
+        super.onAttachedToRecyclerView(recyclerView);
     }
 }

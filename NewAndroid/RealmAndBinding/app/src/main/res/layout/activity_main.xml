@@ -2,15 +2,30 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.omar_al_bukhari.realmandbinding.MainActivity">
 
-   <android.support.v7.widget.RecyclerView
-       android:id="@+id/recyclerviewNormal"
+
+   <EditText
        android:layout_width="match_parent"
-       android:layout_height="match_parent"
+       android:layout_height="50dp"
+       android:id="@+id/editName"/>
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:id="@+id/presButton"
+       android:text="PRESS"/>
+
+   <android.support.v7.widget.RecyclerView
+       android:id="@+id/recyclerviewVertical"
+       android:layout_width="match_parent"
+       android:layout_height="200dp"
        />
+   <android.support.v7.widget.RecyclerView
+       android:id="@+id/recyclerViewHorizontal"
+       android:layout_width="match_parent"
+       android:layout_height="40dp"/>
 
 </LinearLayout>

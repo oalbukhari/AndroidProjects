@@ -1,5 +1,8 @@
 package com.omar_al_bukhari.realmandbinding;
 
+import io.realm.RealmObject;
+import io.realm.annotations.PrimaryKey;
+
 /**
  * Developer: Omar Al Bukhari
  * Username: fedom
@@ -7,14 +10,21 @@ package com.omar_al_bukhari.realmandbinding;
  * Any copy of this code is forbidden.
  */
 
-public class ListItem {
+public class ListItem extends RealmObject {
+
     private String name;
     private String age;
+
+    public ListItem() {
+    }
 
     public ListItem(String name, String age) {
         this.name = name;
         this.age = age;
+
     }
+
+
 
     public String getName() {
         return name;
