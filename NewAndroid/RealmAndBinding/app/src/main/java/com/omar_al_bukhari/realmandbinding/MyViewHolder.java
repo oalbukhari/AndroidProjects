@@ -22,6 +22,7 @@ public class MyViewHolder extends RecyclerView.ViewHolder {
     public MyViewHolder(View itemView) {
         super(itemView);
         ButterKnife.bind(this, itemView);
+
     }
 
 }

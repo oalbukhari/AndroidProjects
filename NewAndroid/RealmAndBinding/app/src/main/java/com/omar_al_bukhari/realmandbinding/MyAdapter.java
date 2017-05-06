@@ -21,7 +21,7 @@ import io.realm.RealmResults;
 public class MyAdapter extends RecyclerView.Adapter<MyViewHolder> {
     private RealmResults<ListItem> list;
     private Context context;
-    private ListItem listItem;
+
 
     public MyAdapter(RealmResults<ListItem> list, Context context) {
         this.list = list;

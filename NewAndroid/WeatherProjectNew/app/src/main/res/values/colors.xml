@@ -3,4 +3,10 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="colorMainToolbar">#000000</color>
+    <color name="colorToolbarChange">#ff0000</color>
+    <color name="colorSelectedObject">#ffaa00</color>
+    <color name="colorTabBarNormal">#ffffff</color>
+    <color name="colorTabBarSelected">#AAAAAA</color>
+    <color name="colorNotSelectedObject">#696969</color>
 </resources>
